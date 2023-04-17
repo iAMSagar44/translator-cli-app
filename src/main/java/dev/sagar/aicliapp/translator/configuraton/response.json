@@ -1,0 +1,19 @@
+{
+  "id": "cmpl-76Fo2rHFnrzvRmbcqQZKXAWdsNas1",
+  "object": "text_completion",
+  "created": 1681725082,
+  "model": "text-davinci-003",
+  "choices": [
+    {
+      "text": "\n1. Quels sont les chambres disponibles ?\n2. Welche Zimmer haben Sie zur Verfügung?",
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 22,
+    "completion_tokens": 32,
+    "total_tokens": 54
+  }
+}
