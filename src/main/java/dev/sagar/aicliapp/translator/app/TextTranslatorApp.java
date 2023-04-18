@@ -27,6 +27,11 @@ public class TextTranslatorApp {
         return gptResponse("French", text).text();
     }
 
+    @ShellMethod(key = "english", value = "translate text to English")
+    public String translateToEnglish(@ShellOption(value = {"text"}) String text){
+        return gptResponse("English", text).text();
+    }
+
     private GPTResponseChoice gptResponse(String language, String text){
         TranslatorResponse translated = openAIClient.translate(new CompletionsModel("text-davinci-003",
                 "Translate this to" + language + text,
